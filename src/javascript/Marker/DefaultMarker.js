@@ -44,7 +44,7 @@ export default function setupDefaultMarker () {
       } else {
         color = this.options.styleEditorOptions.util.rgbToHex(color, true)
       }
-      let url = '../v3marker/pin-' + size
+      let url = 'ico/v3marker/pin-' + size
       if (icon) {
         url += '-' + icon
       }
