@@ -57,7 +57,7 @@ export default function setupGlyphiconMarker () {
       } else {
         color = this.options.styleEditorOptions.util.rgbToHex(color, true)
       }
-      let url = '../v3marker/pin-' + size
+      let url = 'v3marker/pin-' + size
       return url + '+' + color + '.png'
     },
 
