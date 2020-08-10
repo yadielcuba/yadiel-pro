@@ -788,7 +788,7 @@ function setupForm() {
      * @param {*} styleOption, the styleOption to get the standard class for
      */
     getFormElementStandardClass: function getFormElementStandardClass(styleOption) {
-      return new this.options.formElements[styleOption]({
+      return new {
         styleOption: styleOption,
         parentForm: this,
         styleEditorOptions: this.options.styleEditorOptions
@@ -1154,7 +1154,7 @@ function setupGlyphiconMarker() {
         color = this.options.styleEditorOptions.util.rgbToHex(color, true);
       }
 
-      var url = 'https://api.tiles.mapbox.com/v3/marker/pin-' + size;
+      var url = 'v3marker/pin-' + size;
       return url + '+' + color + '.png';
     },
     options: {
